@@ -36,7 +36,8 @@ var V{n in Namskeid,s in Stokkur},binary;
 #námskeiðið sé kennt
 s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<8} V[n,s]=1;
 
-s.t. FimmNamskeidPerStokk {s in Stokkur: s<8}: sum{n in Namskeid} V[n,s]<=5;
+s.t. FimmNamskeidPerStokk {s in Stokkur: s<8}: sum{n in Namskeid} NamskeidTimar[n]*V[n,s]<=5;
+
 
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
