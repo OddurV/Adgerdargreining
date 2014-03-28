@@ -1,3 +1,4 @@
+#Mengi
 # Námskeiðshópur innan við námsleið
 set Hopur := {1..7};
 # Nemi
@@ -13,7 +14,7 @@ set Namsleidir;
 # Skilgreinir námskeiðshóp innan námsleiðar
 set NamskeidHopur {Namsleidir, Hopur} within Namskeid;
 
-
+#Breytur
 # Æskilegur stokkur fyrir námskeið, annars núll
 param NamskeidStokkur{Namskeid};
 # Hvaða misseri tilheyrir námskeiðið.
@@ -23,6 +24,7 @@ param NamskeidTimar {Namskeid};
 # Í hvaða námskeið er nemi skráður.
 param NemiSkradur {Nemi,Namsleidir,Namskeid}, binary;
 
+#Ákvörðunarbreyta
 #Skilgreini V[n,s]
 var V{n in Namskeid,s in Stokkur},binary;
 
