@@ -1,3 +1,4 @@
+#Mengi
 # Námskeiðshópur innan við námsleið
 set Hopur := {1..7};
 # Nemi
@@ -13,7 +14,7 @@ set Namsleidir;
 # Skilgreinir námskeiðshóp innan námsleiðar
 set NamskeidHopur {Namsleidir, Hopur} within Namskeid;
 
-
+#Breytur
 # Æskilegur stokkur fyrir námskeið, annars núll
 param NamskeidStokkur{Namskeid};
 # Hvaða misseri tilheyrir námskeiðið.
@@ -23,6 +24,7 @@ param NamskeidTimar {Namskeid};
 # Í hvaða námskeið er nemi skráður.
 param NemiSkradur {Nemi,Namsleidir,Namskeid}, binary;
 
+#Ákvörðunarbreyta
 #Skilgreini V[n,s]
 var V{n in Namskeid,s in Stokkur},binary;
 
@@ -33,11 +35,14 @@ var V{n in Namskeid,s in Stokkur},binary;
 #Aðeins eitt námskeið innan við námskeiðshóp sé kennt í einu
 #param OneAtATime {};
 
-#námskeiðið sé kennt
-s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<8} V[n,s]=1;
 
-s.t. FimmNamskeidPerStokk {s in Stokkur: s<8}: sum{n in Namskeid} V[n,s]<=5;
 
+#námskeiðið sé kennt aðeins einu sinni
+s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<=8} V[n,s]=1;
+#Stokkur taki að hámarki við 5 kennslustundum (nema stokkur 8)
+s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<=8}: sum{n in NamskeidHopur[ell,h]} NamskeidTimar[n]*V[n,s]<=5;
+
+minimize EftirHadegi: sum{n in Namskeid, s in Stokkur: s>5} V[n,s];
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #Dæmi frá Tomma:
@@ -56,8 +61,8 @@ param FjoldiNamskeid {n in Namskeid} := sum{i in Nemi, ell in Namsleidir} NemiSk
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 solve;
-display V;
-
+#display V;
+display EftirHadegi;
 
 
 data;
