@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.26)  28 MAR 2014 14:15
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.26)  28 MAR 2014 16:09
 entering extended mode
 **aðgerðverk.tex
-("C:\Users\Einar\Desktop\New folder\aðgerðverk.tex"
+("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\aðgerðverk.tex"
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -238,7 +238,7 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 )
-("C:\Users\Einar\Desktop\New folder\mcode.sty"
+("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\mcode.sty"
 -- Package: `mcode' 2.4 <2013/11/05> --
 Package: mcode 2013/11/05 2.4
  - settings optimized for display (colour formating)
@@ -495,7 +495,7 @@ Package: arydshln 2004/08/31 v1.71
 \adl@everyvbox=\toks38
 \adl@LTpagetotal=\dimen147
 )
-("C:\Users\Einar\Desktop\New folder\aðgerðverk.aux")
+("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\aðgerðverk.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
 LaTeX Font Info:    ... okay on input line 36.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
@@ -591,16 +591,18 @@ Package pdftex.def Info: HI_merki.jpg used on input line 43.
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 ) [1
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Einar/Desktop/Ne
-w folder/HI_merki.jpg>] [2] <stokkur.png, id=15, 311.66437pt x 157.33781pt>
-File: stokkur.png Graphic file (type png)
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Einar/Documents/
+GitHub/Adgerdargreining/New folder/HI_merki.jpg>] [2]
+<stundatafla.pdf, id=15, 893.3375pt x 609.27625pt>
+File: stundatafla.pdf Graphic file (type pdf)
+ <use stundatafla.pdf>
+Package pdftex.def Info: stundatafla.pdf used on input line 122.
+(pdftex.def)             Requested size: 268.00331pt x 182.78427pt.
 
-<use stokkur.png>
-Package pdftex.def Info: stokkur.png used on input line 121.
-(pdftex.def)             Requested size: 311.6636pt x 157.33742pt.
- [1
+[1
 
- <C:/Users/Einar/Desktop/New folder/stokkur.png>]
+ <C:/Users/Einar/Documents/GitHub/Adgerdargreining/New folder/stundatafla.pdf>]
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.11469pt.
@@ -614,32 +616,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] ("C:\Users\Einar\Desktop\New folder\aðgerðverk.aux")
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[3] ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\aðgerðverk.au
+x") ) 
 Here is how much of TeX's memory you used:
  7941 strings out of 494049
- 112046 string characters out of 3146065
+ 112300 string characters out of 3146065
  204443 words of memory out of 3000000
  11077 multiletter control sequences out of 15000+200000
  19013 words of font info for 50 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
  36i,11n,43p,372b,709s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1200.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1728.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/cm-super/sfxc2074.pfb>
-Output written on aðgerðverk.pdf (5 pages, 190766 bytes).
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.en
+c}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1200.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1728.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1200.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc2074.pfb>
+Output written on aðgerðverk.pdf (5 pages, 203246 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 64 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
