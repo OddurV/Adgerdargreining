@@ -1,0 +1,63 @@
+% pakkar fyrir töflur; array er notað í "math-mode"; arydshln fyrir brotalínur í töflum
+\usepackage{array,tabularx}%,arydshln}  
+% íslenskt letur, orðaskiptingar ...
+\usepackage[icelandic]{babel}
+\usepackage[T1]{fontenc}
+% númera jöfnur, töflur, myndir, ...
+\usepackage{enumerate}
+% fyrir krækjur
+\usepackage[colorlinks,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+% ýmis tákn, leturgerðir, ... ATH amsmath fyrir \text{} skipunina
+\usepackage{amsmath,amssymb,euscript,pifont}   
+% til að setja inn *.eps myndir ef við notum dvi og ps skjöl...
+\usepackage{epsfig}    % \epsfig{...}
+% ... en ef við notum pdf beint, þá er þetta pakkinn sem við þurfum
+\usepackage{graphicx}  % \includegraphics[...]{...}
+% litamöguleikar fyrir texta
+\usepackage{color}
+% til þess að myndir og töflur standi þar sem þær eiga að standa!
+\usepackage{here}
+%
+\setlength{\textwidth}{5.5in}
+\setlength{\textheight}{9in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\topskip}{0in}
+\setlength{\topmargin}{1cm}
+\setlength{\oddsidemargin}{0.5in}
+% dregur fyrstu línu í hverri málsgrein inn - nota 0cm fyrir engan inndrátt fyrir allar málsgreinar en \noindent í upphafi málsgreinar til að hafa engan inndrátt í þeirri málsgrein einni:
+\setlength{\parindent}{0cm}
+% viljum hafa eitt línubil milli efnisgreina
+\setlength{\parskip}{\baselineskip}
+% 1.5 í línubil
+\renewcommand{\baselinestretch}{1.5}
+
+
+% Environment for all kinds of lists
+\newenvironment{listinr}[1][$\quad\,$1.]{
+\begin{enumerate}[$\quad\,$#1]
+  \setlength{\itemsep}{1pt}
+  \setlength{\parskip}{0pt}
+  \setlength{\parsep}{0pt}}{\end{enumerate}
+}
+
+% ----- TABLE/FIGURE WITH MODIFIED PLACEMENT + BOLDFACE CAPTION ---------
+% Here it is: the code that adjusts justification and spacing around caption.
+\makeatletter
+% http://www.texnik.de/floats/caption.phtml
+% This does spacing around caption.
+\setlength{\abovecaptionskip}{6pt}   % 0.5cm as an example
+\setlength{\belowcaptionskip}{6pt}   % 0.5cm as an example
+% This does justification (left) of caption and boldface table name.
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \sbox\@tempboxa{\textbf{#1.}\quad #2}%
+  \ifdim \wd\@tempboxa >\hsize
+    \textbf{#1.}\quad #2\par
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip}
+\makeatother
+% -------------------------------------------------------------------
