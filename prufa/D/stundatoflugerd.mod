@@ -35,21 +35,6 @@ s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<=8}: sum{
 
 minimize EftirHadegi: sum{n in Namskeid, s in Stokkur: s>5} V[n,s];
 
-#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-#Dæmi frá Tomma:
-#Útreikningur á árekstrum:
-printf " " > "lidur_c.txt";
-for {k in Nemi}
-{
-    printf {s in Stokkur: s < 8}: "%d ",
-    sum{n in Namskeid, ell in Namsleidir: NemiSkradur[k, ell, n] == 1} V[n,s] >> "lidur_c.txt";
-    printf "\n" >> "lidur_c.txt";
-}
-
-#Fjöldi nema í námskeiði má reikna svona:
-param FjoldiNamskeid {n in Namskeid} := sum{i in Nemi, ell in Namsleidir} NemiSkradur[i, ell, n];
-
-#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 solve;
