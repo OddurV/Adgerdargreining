@@ -36,20 +36,8 @@ s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<=8} V[n,s]=1;
 s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<=8}: sum{n in NamskeidHopur[ell,h]} NamskeidTimar[n]*V[n,s]<=5;
 
 #Liður D
-#Tilraun 1 - No primal feasible solution found
-#s.t. AEskilegSkipting {n in Namskeid,s in Stokkur}: if NamskeidStokkur[n]==s then V[n,s]=1;
-
-#Tilraun 2 - No primal feasible solution found. Eins ef NamskeidMisseri[n]==4 eða 6.
-#s.t. AEskilegSkipting {n in Namskeid,s in Stokkur}: if NamskeidStokkur[n]==s and NamskeidMisseri[n]==2 then V[n,s]=1;
-
-#Tilraun 3 - Error. Má ekki segja V[n,s]==1?
-#param Breyta {Namskeid},binary;
-#maximize AEskilegSkipting: sum{n in Namskeid} Breyta[n];
-#s.t. AEskilegSkiptingSkorda {n in Namskeid,s in Stokkur}: if NamskeidStokkur[n]==s and V[n,s]==1 then Breyta[n]=1;
-
-#Tilraun 4
+#Fyrri hluti
 maximize AEskilegSkipting: sum{n in Namskeid, s in Stokkur: NamskeidStokkur[n]>0} V[n,NamskeidStokkur[n]];
-
 
 solve;
 param misseristeljari {m in Misseri}:= sum{n in Namskeid, s in Stokkur: NamskeidStokkur[n]>0} if V[n,NamskeidStokkur[n]]==1 and NamskeidMisseri[n]==m then 1 else 0;
@@ -58,3 +46,14 @@ display EftirHadegi;
 display AEskilegSkipting;
 display misseristeljari;
 end;
+
+#Seinni hluti
+#maximize AEskilegSkipting: sum{m in Misseri} sum{n in Namskeid, s in Stokkur: NamskeidStokkur[n]>0} V[n,NamskeidStokkur[n]];
+#summa yfir Misseri, margfalda með stórri tölu ef m==2, lægri eftir því sem m hækkar.
+#solve;
+#param misseristeljari {m in Misseri}:= sum{n in Namskeid, s in Stokkur: NamskeidStokkur[n]>0} if V[n,NamskeidStokkur[n]]==1 and NamskeidMisseri[n]==m then 1 else 0;
+##display V;
+#display EftirHadegi;
+#display AEskilegSkipting;
+#display misseristeljari;
+#end;
