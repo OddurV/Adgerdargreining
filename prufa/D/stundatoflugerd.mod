@@ -47,9 +47,13 @@ s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<=8}: sum{
 #maximize AEskilegSkipting: sum{n in Namskeid} Breyta[n];
 #s.t. AEskilegSkiptingSkorda {n in Namskeid,s in Stokkur}: if NamskeidStokkur[n]==s and V[n,s]==1 then Breyta[n]=1;
 
+#Tilraun 4
+maximize AEskilegSkipting: sum{n in Namskeid,s in Stokkur: NamskeidStokkur[n]>0} V[n,NamskeidStokkur[n]];
+
+#Skilaboð frá Tómasi: Væntalega þarf að summa yfir V[n,s] þar sem{ … :  NamskeidStokkur[n]>0 } (default núll => skiptir ekki máli) og stokkurinn er V[n,NamskeidStokkur[n]]
 
 solve;
 #display V;
 display EftirHadegi;
-
+display AEskilegSkipting;
 end;
