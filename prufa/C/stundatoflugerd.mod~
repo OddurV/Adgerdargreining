@@ -37,25 +37,16 @@ s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<=8} V[n,s]=1;
 s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<=8}: sum{n in NamskeidHopur[ell,h]} NamskeidTimar[n]*V[n,s]<=5;
 
 solve;
-#param temp;
-#param Arekstrar{Stokkur};
-#for {k in Nemi}
-#{
-#    temp{s in Stokkur}: sum{n in Namskeid, ell in Namsleidir: NemiSkradur[k, ell, n] == 1} V[n,s];
-#    if temp>1 then Arekstrar[s]=Arekstrar[s]+1;
-#}
-#s.t. Takmark {h in Hraefni}: sum{v in Vorur} MagnHraefnisPerVoru[h,v]*Magn[v] <= Takmarkanir[h];
-#display Arekstrar;
 
 #%%%%
 param Arekstrar {k in Nemi, s in Stokkur} := sum{n in Namskeid, ell in Namsleidir: NemiSkradur[k, ell, n] == 1} V[n,s];
 param Bin {k in Nemi,s in Stokkur} := if Arekstrar[k,s]>1 then 1 else 0;
 param Arekstur {s in Stokkur}:= sum{k in Nemi} Bin[k,s];
 
-printf "" > "lidur_c.txt";
-printf{s in Stokkur}: "%d ", Arekstur[s] >> "lidur_c.txt";
-printf "\n" >> "lidur_c.txt";
-
+#printf "" > "lidur_c.txt";
+#printf{s in Stokkur}: "%d ", Arekstur[s] >> "lidur_c.txt";
+#printf "\n" >> "lidur_c.txt";
+display Arekstur;
 #%%%%
 
 
@@ -76,15 +67,7 @@ printf "\n" >> "lidur_c.txt";
 param FjoldiNamskeid {n in Namskeid} := sum{i in Nemi, ell in Namsleidir} NemiSkradur[i, ell, n];
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-#param Arekstrar{Stokkur};
-#for {k in Nemi}
-#{
-#    for {s in Stokkur}
-#    {
-#        temp=sum{n in Namskeid, ell in Namsleidir: NemiSkradur[k, ell, n] == 1} V[n,s];
-#        if temp>1 then Arekstrar[s]=Arekstrar[s]+1;
-#    }
-#}
+
 #display Arekstrar;
 
 

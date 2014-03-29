@@ -43,10 +43,10 @@ param Arekstrar {k in Nemi, s in Stokkur} := sum{n in Namskeid, ell in Namsleidi
 param Bin {k in Nemi,s in Stokkur} := if Arekstrar[k,s]>1 then 1 else 0;
 param Arekstur {s in Stokkur}:= sum{k in Nemi} Bin[k,s];
 
-printf "" > "lidur_c.txt";
-printf{s in Stokkur}: "%d ", Arekstur[s] >> "lidur_c.txt";
-printf "\n" >> "lidur_c.txt";
-
+#printf "" > "lidur_c.txt";
+#printf{s in Stokkur}: "%d ", Arekstur[s] >> "lidur_c.txt";
+#printf "\n" >> "lidur_c.txt";
+display Arekstur;#Niðurstöður hjá Oddi: 145 156 115 105 295 0 20 0
 #%%%%
 
 
