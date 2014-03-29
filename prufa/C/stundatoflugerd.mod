@@ -1,4 +1,4 @@
-#Mengi
+﻿#Mengi
 # Námskeiðshópur innan við námsleið
 set Hopur := {1..7};
 # Nemi
@@ -46,7 +46,10 @@ param Arekstur {s in Stokkur}:= sum{k in Nemi} Bin[k,s];
 #printf "" > "lidur_c.txt";
 #printf{s in Stokkur}: "%d ", Arekstur[s] >> "lidur_c.txt";
 #printf "\n" >> "lidur_c.txt";
-display Arekstur;#Niðurstöður hjá Oddi: 145 156 115 105 295 0 20 0
+display Arekstur;
+#Niðurstöður hjá Oddi: 
+#Xubuntu: 145 156 115 105 295 0 20 0
+#Windows: 156 75 132 110 307 30 15 0
 #%%%%
 
 
