@@ -1,39 +1,39 @@
 #Mengi
-# NÃ¡mskeiÃ°shÃ³pur innan viÃ° nÃ¡msleiÃ°
+# Námskeiğshópur innan viğ námsleiğ
 set Hopur := {1..7};
 # Nemi
 set Nemi := {1..1858};
-# Stokkar 7 og stokkur 8 (tÃ¡knar utan stokka)
+# Stokkar 7 og stokkur 8 (táknar utan stokka)
 set Stokkur := {1..8};
-# Ã vorin erum viÃ° meÃ° Ã¾essi 3 misseri
+# Á vorin erum viğ meğ şessi 3 misseri
 set Misseri := {2,4,6};
-# NÃ¡mskeiÃ°in
+# Námskeiğin
 set Namskeid := {1..141};
-# Tegundir nÃ¡msleiÃ°a Ã¾Ã¦r eru 15 samtals
+# Tegundir námsleiğa şær eru 15 samtals
 set Namsleidir;
-# Skilgreinir nÃ¡mskeiÃ°shÃ³p innan nÃ¡msleiÃ°ar
+# Skilgreinir námskeiğshóp innan námsleiğar
 set NamskeidHopur {Namsleidir, Hopur} within Namskeid;
 
 #Breytur
-# Ã†skilegur stokkur fyrir nÃ¡mskeiÃ°, annars nÃºll
+# Æskilegur stokkur fyrir námskeiğ, annars núll
 param NamskeidStokkur{Namskeid};
-# HvaÃ°a misseri tilheyrir nÃ¡mskeiÃ°iÃ°.
+# Hvağa misseri tilheyrir námskeiğiğ.
 param NamskeidMisseri{Namskeid};
-# HvaÃ° Ã¾arf nÃ¡mskeiÃ°iÃ° marga tÃ­ma Ã­ stokkakerfiÃ°, oftast 5.
+# Hvağ şarf námskeiğiğ marga tíma í stokkakerfiğ, oftast 5.
 param NamskeidTimar {Namskeid};
-# Ã hvaÃ°a nÃ¡mskeiÃ° er nemi skrÃ¡Ã°ur.
+# Í hvağa námskeiğ er nemi skráğur.
 param NemiSkradur {Nemi,Namsleidir,Namskeid}, binary;
 
-#ÃkvÃ¶rÃ°unarbreyta
+#Ákvörğunarbreyta
 #Skilgreini V[n,s]
 var V{n in Namskeid,s in Stokkur},binary;
 #var temp,>=0,integer;
 
 minimize EftirHadegi: sum{n in Namskeid, s in Stokkur: s>5} V[n,s];
 
-#nÃ¡mskeiÃ°iÃ° sÃ© kennt aÃ°eins einu sinni
+#námskeiğiğ sé kennt ağeins einu sinni
 s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<=8} V[n,s]=1;
-#Stokkur taki aÃ° hÃ¡marki viÃ° 5 kennslustundum (nema stokkur 8)
+#Stokkur taki ağ hámarki viğ 5 kennslustundum (nema stokkur 8)
 s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<=8}: sum{n in NamskeidHopur[ell,h]} NamskeidTimar[n]*V[n,s]<=5;
 
 solve;
@@ -46,15 +46,15 @@ param Arekstur {s in Stokkur}:= sum{k in Nemi} Bin[k,s];
 #printf "" > "lidur_c.txt";
 #printf{s in Stokkur}: "%d ", Arekstur[s] >> "lidur_c.txt";
 #printf "\n" >> "lidur_c.txt";
-display Arekstur;#NiÃ°urstÃ¶Ã°ur hjÃ¡ Oddi: 145 156 115 105 295 0 20 0
+display Arekstur;#Niğurstöğur hjá Oddi: 145 156 115 105 295 0 20 0
 #%%%%
 
 
 
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-#DÃ¦mi frÃ¡ Tomma:
-#Ãštreikningur Ã¡ Ã¡rekstrum:
+#Dæmi frá Tomma:
+#Útreikningur á árekstrum:
 #printf " " > "lidur_c.txt";
 #for {k in Nemi}
 #{
@@ -63,7 +63,7 @@ display Arekstur;#NiÃ°urstÃ¶Ã°ur hjÃ¡ Oddi: 145 156 115 105 295 0 20 0
 #    printf "\n" >> "lidur_c.txt";
 #}
 
-#FjÃ¶ldi nema Ã­ nÃ¡mskeiÃ°i mÃ¡ reikna svona:
+#Fjöldi nema í námskeiği má reikna svona:
 param FjoldiNamskeid {n in Namskeid} := sum{i in Nemi, ell in Namsleidir} NemiSkradur[i, ell, n];
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

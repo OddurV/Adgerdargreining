@@ -11,7 +11,16 @@
 \usepackage{gensymb}
 \usepackage{pdflscape}
 \usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}\lstset{language=matlab} 
-\lstset{inputencoding=latin1}
+
+\lstset { inputencoding=latin1,
+    language=python,backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\color{blue}\bfseries,
+    stepnumber=1,
+    morekeywords={set,param,var,solve,data,display,maximize,minimize,subject to,sum}
+}
+
+
 \usepackage{caption}
 \usepackage{here}
 \usepackage{amsmath} % or simply amstext
@@ -143,9 +152,9 @@ Verkfræði og náttúruvísindasvið Háskóla Íslands notast við stokkakerfi
 \item Aðalniðurstöður
 	
 
-\item Aukaniðurstöður → Viðauka
+\item Aukaniðurstöður ? Viðauka
 \item Yfirgripsmikil gögn eða greining
-\item Stuðningsniðurstöður → Viðauka
+\item Stuðningsniðurstöður ? Viðauka
 \end{itemize}
 
 \textbf{a) } Byrjuðum á því að setja þá skorðu að hvert námskeið sé kennt aðeins einu sinni og hver stokkur taki að hámarki 5 kennslustundum samtals nema stokkur 8 sem getur tekið við afgangstímum. Pössuðum upp á að eitt námskeið við námskeiðshóp væri kennt í einu svo nemendur í þeim hópum lentu ekki í árekstrum. Lögleg lausn fannst á þessu keyrsluforriti.
