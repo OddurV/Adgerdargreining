@@ -46,7 +46,7 @@ param Arekstur {s in Stokkur}:= sum{k in Nemi} Bin[k,s];
 #printf "" > "lidur_c.txt";
 #printf{s in Stokkur}: "%d ", Arekstur[s] >> "lidur_c.txt";
 #printf "\n" >> "lidur_c.txt";
-display Arekstur;
+display Arekstur;#Niðurstöður hjá Oddi: 145 156 115 105 295 0 20 0
 #%%%%
 
 
