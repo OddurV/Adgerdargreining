@@ -1,4 +1,4 @@
-﻿#Mengi
+#Mengi
 # Námskeiðshópur innan við námsleið
 set Hopur := {1..7};
 # Nemi
@@ -47,9 +47,6 @@ param Arekstur {s in Stokkur}:= sum{k in Nemi} Bin[k,s];
 #printf{s in Stokkur}: "%d ", Arekstur[s] >> "lidur_c.txt";
 #printf "\n" >> "lidur_c.txt";
 display Arekstur;
-#Niðurstöður hjá Oddi: 
-#Xubuntu: 145 156 115 105 295 0 20 0
-#Windows: 156 75 132 110 307 30 15 0
 #%%%%
 
 
@@ -70,7 +67,15 @@ display Arekstur;
 param FjoldiNamskeid {n in Namskeid} := sum{i in Nemi, ell in Namsleidir} NemiSkradur[i, ell, n];
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+#param Arekstrar{Stokkur};
+#for {k in Nemi}
+#{
+#    for {s in Stokkur}
+#    {
+#        temp=sum{n in Namskeid, ell in Namsleidir: NemiSkradur[k, ell, n] == 1} V[n,s];
+#        if temp>1 then Arekstrar[s]=Arekstrar[s]+1;
+#    }
+#}
 #display Arekstrar;
 
 
