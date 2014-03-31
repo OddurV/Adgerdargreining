@@ -37,23 +37,29 @@ minimize EftirHadegi: sum{n in Namskeid, s in Stokkur: s>5} V[n,s];
 
 solve;
 #display V;
-printf " " > "b_lidur.txt";
-
 display EftirHadegi;
 
+
+printf " " > "stundatoflur.txt";
 param EDLfjoldi{n in Namskeid} := sum{k in Nemi: NemiSkradur[k,"EDL", n] == 1}1;
 #param EDLI {n in Namskeid} := for{k in Nemi}
-printf "\n ***********\n " >> "b_lidur.txt";
+printf "\n ***********\n " >> "stundatoflur.txt";
 
 #ÞETTA SÝNIR HVAÐA NÁMSKEIÐ FARA Í HVAÐA STOKK Í EÐLISFRÆÐIHÓPNUM
 #ÞAR SEM NÚMER LÍNU ER NÚMER STOKKS
 param ErAMisseri {m in Misseri, n in Namskeid} := if NamskeidMisseri[n] == m then n else 0;
 for{m in Misseri}{
-	for{s in Stokkur}{
-		printf {n in Namskeid: V[n,s] == 1 and EDLfjoldi[n]>0 and ErAMisseri[m,n]>0} "%d ", n >> "b_lidur.txt";  
-		printf "\n " >> "b_lidur.txt";
-	}
-printf "---\n " >> "b_lidur.txt";
+    printf "Misseri " >> "stundatoflur.txt";
+    printf m >> "stundatoflur.txt";
+    printf "\n " >> "stundatoflur.txt";
+    for{s in Stokkur}{
+        printf "Stokkur " >> "stundatoflur.txt";
+        printf s >> "stundatoflur.txt";
+        printf ": " >> "stundatoflur.txt";
+        printf {n in Namskeid: V[n,s] == 1 and EDLfjoldi[n]>0 and ErAMisseri[m,n]>0} "%d ", n >> "stundatoflur.txt";  
+        printf "\n " >> "stundatoflur.txt";
+    }
+printf "---\n " >> "stundatoflur.txt";
 }
 
 
