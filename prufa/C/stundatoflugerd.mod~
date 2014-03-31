@@ -67,7 +67,15 @@ display Arekstur;
 param FjoldiNamskeid {n in Namskeid} := sum{i in Nemi, ell in Namsleidir} NemiSkradur[i, ell, n];
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+#param Arekstrar{Stokkur};
+#for {k in Nemi}
+#{
+#    for {s in Stokkur}
+#    {
+#        temp=sum{n in Namskeid, ell in Namsleidir: NemiSkradur[k, ell, n] == 1} V[n,s];
+#        if temp>1 then Arekstrar[s]=Arekstrar[s]+1;
+#    }
+#}
 #display Arekstrar;
 
 

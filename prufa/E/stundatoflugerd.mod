@@ -23,15 +23,16 @@ param NamskeidMisseri{Namskeid};
 param NamskeidTimar {Namskeid};
 # Í hvaða námskeið er nemi skráður.
 param NemiSkradur {Nemi,Namsleidir,Namskeid}, binary;
-
+param FjoldiNamskeid {n in Namskeid} := sum{i in Nemi, ell in Namsleidir} NemiSkradur[i, ell, n];
 #Ákvörðunarbreyta
 #Skilgreini V[n,s]
 var V{n in Namskeid,s in Stokkur},binary;
-var Z;
-maximize Z;
-s.t. Breytuheiti {s in Stokkur}: (sum{n in Namskeid} V[n,s])/FjoldiNamskeid[n]>=Z;
 
-param FjoldiNamskeid {n in Namskeid} := sum{i in Nemi, ell in Namsleidir} NemiSkradur[i, ell, n];
+var Z;
+maximize Breyta: Z;
+s.t. Breytuheiti {s in Stokkur}: sum{n in Namskeid} V[n,s]/FjoldiNamskeid[n]>=Z;
+
+
 
 
 #námskeiðið sé kennt aðeins einu sinni
@@ -39,7 +40,10 @@ s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<=8} V[n,s]=1;
 #Stokkur taki að hámarki við 5 kennslustundum (nema stokkur 8)
 s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<=8}: sum{n in NamskeidHopur[ell,h]} NamskeidTimar[n]*V[n,s]<=5;
 
+solve;
+display V;
 
+/*
 #Liður D
 #Fyrri hluti
 #Þetta markfall virkar þannig að það leggur saman öll námskeiðin sem lenda í æskilegum stokki, og dregur svo frá 
@@ -61,7 +65,7 @@ param prufa3 := prufa1-prufa2;
 display prufa1;
 display prufa2;
 display prufa3;
-
+*/
 /*
 #Niðurstöður hjá Oddi (í Windows), til samanburðar
 Display statement at line 48
@@ -136,4 +140,5 @@ for{m in Misseri}{
 printf "---\n " >> "stundatoflur.txt";
 }
 #%%%%%%%%%%%%%%%%%%%%
+
 end;

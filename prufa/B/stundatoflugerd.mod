@@ -39,7 +39,8 @@ solve;
 #display V;
 display EftirHadegi;
 
-
+#%%%%%%%%%%%%%%%%%%%%
+#Fall sem prentar út stundatöflurnar
 printf " " > "stundatoflur.txt";
 param EDLfjoldi{n in Namskeid} := sum{k in Nemi: NemiSkradur[k,"EDL", n] == 1}1;
 #param EDLI {n in Namskeid} := for{k in Nemi}
@@ -61,7 +62,7 @@ for{m in Misseri}{
     }
 printf "---\n " >> "stundatoflur.txt";
 }
-
+#%%%%%%%%%%%%%%%%%%%%
 
 
 end;
