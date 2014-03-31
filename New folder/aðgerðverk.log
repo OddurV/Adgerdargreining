@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.26)  28 MAR 2014 18:05
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.26)  31 MAR 2014 15:22
 entering extended mode
 **aðgerðverk.tex
 ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\aðgerðverk.tex"
@@ -296,6 +296,9 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2010/01/09 v3.1m Customizing captions (AR)
 
@@ -496,25 +499,25 @@ Package: arydshln 2004/08/31 v1.71
 \adl@LTpagetotal=\dimen147
 )
 ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\aðgerðverk.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
-LaTeX Font Info:    ... okay on input line 36.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 36.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 42.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    ... okay on input line 42.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\unicode\ucsencs.def"
 File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
@@ -568,15 +571,15 @@ File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
 
 \symgns@font=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 36.
-Package gensymb Info: Math companion symbols declared on input line 36.
-LaTeX Info: Redefining \degree on input line 36.
-LaTeX Info: Redefining \celsius on input line 36.
+(Font)                  TS1/cmr/m/n --> TS1/cmr/bx/n on input line 42.
+Package gensymb Info: Math companion symbols declared on input line 42.
+LaTeX Info: Redefining \degree on input line 42.
+LaTeX Info: Redefining \celsius on input line 42.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 36.
-LaTeX Info: Redefining \ohm on input line 36.
-Package gensymb Info: Using \textohm for \ohm on input line 36.
-Package gensymb Info: Using \textmu for \micro on input line 36.
+erthousand on input line 42.
+LaTeX Info: Redefining \ohm on input line 42.
+Package gensymb Info: Using \textohm for \ohm on input line 42.
+Package gensymb Info: Using \textmu for \micro on input line 42.
 \c@lstlisting=\count166
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
@@ -584,7 +587,7 @@ Package caption Info: End \AtBeginDocument code.
 <HI_merki.jpg, id=1, 81.906pt x 80.4606pt>
 File: HI_merki.jpg Graphic file (type jpg)
  <use HI_merki.jpg>
-Package pdftex.def Info: HI_merki.jpg used on input line 43.
+Package pdftex.def Info: HI_merki.jpg used on input line 49.
 (pdftex.def)             Requested size: 67.84756pt x 66.65582pt.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\unicode\data\uni-0.def"
@@ -596,7 +599,7 @@ GitHub/Adgerdargreining/New folder/HI_merki.jpg>] [2]
 <stundatafla.pdf, id=15, 893.3375pt x 609.27625pt>
 File: stundatafla.pdf Graphic file (type pdf)
  <use stundatafla.pdf>
-Package pdftex.def Info: stundatafla.pdf used on input line 122.
+Package pdftex.def Info: stundatafla.pdf used on input line 128.
 (pdftex.def)             Requested size: 268.00331pt x 182.78427pt.
 
 [1
@@ -611,7 +614,7 @@ File: uni-33.def 2004/10/17 UCS: Unicode data U+2100..U+21FF
 <c_lidur_plot.pdf, id=30, 613.29124pt x 385.44pt>
 File: c_lidur_plot.pdf Graphic file (type pdf)
  <use c_lidur_plot.pdf>
-Package pdftex.def Info: c_lidur_plot.pdf used on input line 156.
+Package pdftex.def Info: c_lidur_plot.pdf used on input line 162.
 (pdftex.def)             Requested size: 306.64487pt x 192.71953pt.
 
 
@@ -636,42 +639,82 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 222.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+)
+("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\stundatoflugerd.m
+od"
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 3.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.11469pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\aðgerðverk.au
+[5]
+Overfull \hbox (128.38576pt too wide) in paragraph at lines 55--56
+[][][][][][][][][]  
+ []
+
+
+Overfull \hbox (128.38576pt too wide) in paragraph at lines 69--71
+[][][][][][][][][]  
+ []
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.11469pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6] ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\aðgerðverk.au
 x") ) 
 Here is how much of TeX's memory you used:
- 8739 strings out of 494049
- 121042 string characters out of 3146065
- 205443 words of memory out of 3000000
- 11868 multiletter control sequences out of 15000+200000
- 19013 words of font info for 50 fonts, out of 3000000 for 9000
+ 9144 strings out of 494049
+ 125249 string characters out of 3146065
+ 283127 words of memory out of 3000000
+ 12253 multiletter control sequences out of 15000+200000
+ 23122 words of font info for 59 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,11n,43p,423b,709s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.e
-nc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/
-Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program File
-s (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1200.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/cm-super/sfcc1728.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/cm-super/sfrm1440.pfb><C:/Program Files (x86)/MiKTeX 2.9
-/fonts/type1/public/cm-super/sfrm2074.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/cm-super/sfti1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
-/type1/public/cm-super/sfxc2074.pfb>
-Output written on aðgerðverk.pdf (7 pages, 265506 bytes).
+ 36i,11n,43p,423b,2201s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86
+)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/cm-super/sfbx1200.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
+nts/type1/public/cm-super/sfcc1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts
+/type1/public/cm-super/sfcc1440.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
+pe1/public/cm-super/sfcc1728.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
+/public/cm-super/sfrm0600.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pu
+blic/cm-super/sfrm1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publi
+c/cm-super/sfrm1440.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/c
+m-super/sfrm2074.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-s
+uper/sfti1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-supe
+r/sftt1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/s
+fxc2074.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.p
+fb>
+Output written on aðgerðverk.pdf (8 pages, 349056 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
+ 131 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
