@@ -49,15 +49,14 @@ param ErAMisseri {m in Misseri, n in Namskeid} := if NamskeidMisseri[n] == m the
 for{m in Misseri}{
     printf "Misseri " >> "stundatoflur.txt";
     printf m >> "stundatoflur.txt";
-    printf "\n " >> "stundatoflur.txt";
+    printf "\n" >> "stundatoflur.txt";
     for{s in Stokkur}{
         printf "Stokkur " >> "stundatoflur.txt";
         printf s >> "stundatoflur.txt";
         printf ": " >> "stundatoflur.txt";
         printf {n in Namskeid: V[n,s] == 1 and EDLfjoldi[n]>0 and ErAMisseri[m,n]>0} "%d ", n >> "stundatoflur.txt";  
-        printf "\n " >> "stundatoflur.txt";
+        printf "\n" >> "stundatoflur.txt";
     }
-printf "---\n " >> "stundatoflur.txt";
 }
 #%%%%%%%%%%%%%%%%%%%%
 
