@@ -28,7 +28,7 @@ param FjoldiNamskeid {n in Namskeid} := sum{i in Nemi, ell in Namsleidir} NemiSk
 #Skilgreini V[n,s]
 var V{n in Namskeid,s in Stokkur},binary;
 
-/*
+
 #Fyrri hluti:
 var Z;
 maximize Breyta: Z;
@@ -36,9 +36,9 @@ s.t. Breytuheiti {s in Stokkur}: sum{n in Namskeid} V[n,s]/FjoldiNamskeid[n]>=Z;
 
 #námskeiðið sé kennt aðeins einu sinni
 s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<=8} V[n,s]=1;
-*/
 
 
+/*
 #Seinni hluti (breyti markfallinu þannig að það reyni að setja sem flest námskeið fyrir hádegi)
 var Z;
 maximize Breyta: Z-sum{n in Namskeid, s in Stokkur: s>5} V[n,s];
@@ -46,7 +46,7 @@ s.t. Breytuheiti {s in Stokkur}: sum{n in Namskeid} V[n,s]/FjoldiNamskeid[n]>=Z;
 
 #námskeiðið sé kennt aðeins einu sinni
 s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<=8} V[n,s]=1;
-
+*/
 
 
 solve;
@@ -67,9 +67,13 @@ printf {n in Namskeid} "%d\n ", FjoldiNamskeid[n] >> "FjoldiNamskeid.txt";
 
 printf "">"FjoldiStokkur.txt";
 for{m in Misseri}{
-    printf "Misseri ",m,": \n">>"FjoldiStokkur.txt";
+    printf "Misseri ">>"FjoldiStokkur.txt";
+    printf m>>"FjoldiStokkur.txt";
+    printf ": \n">>"FjoldiStokkur.txt";
     for{s in Stokkur}{
-        printf "Stokkur ",s,": ">>"FjoldiStokkur.txt";
+        printf "Stokkur ">>"FjoldiStokkur.txt";
+        printf s>>"FjoldiStokkur.txt";
+        printf ": ">>"FjoldiStokkur.txt";
         printf sum{n in Namskeid: V[n,s]==1 and NamskeidMisseri[n]==m} FjoldiNamskeid[n]>>"FjoldiStokkur.txt";
         printf "\n">>"FjoldiStokkur.txt";
     }
