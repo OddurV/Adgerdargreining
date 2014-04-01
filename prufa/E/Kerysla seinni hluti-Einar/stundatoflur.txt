@@ -1,0 +1,33 @@
+ 
+ ***********
+ Misseri 2
+ Stokkur 1: 13 52 118 
+ Stokkur 2: 11 28 43 90 
+ Stokkur 3: 27 124 132 
+ Stokkur 4: 9 109 
+ Stokkur 5: 12 111 
+ Stokkur 6: 108 123 
+ Stokkur 7: 
+ Stokkur 8: 106 
+ ---
+ Misseri 4
+ Stokkur 1: 30 32 
+ Stokkur 2: 64 
+ Stokkur 3: 31 37 135 
+ Stokkur 4: 34 93 115 136 
+ Stokkur 5: 33 35 36 39 112 
+ Stokkur 6: 
+ Stokkur 7: 96 114 
+ Stokkur 8: 
+ ---
+ Misseri 6
+ Stokkur 1: 
+ Stokkur 2: 
+ Stokkur 3: 
+ Stokkur 4: 
+ Stokkur 5: 38 45 
+ Stokkur 6: 
+ Stokkur 7: 
+ Stokkur 8: 
+ ---
+ 

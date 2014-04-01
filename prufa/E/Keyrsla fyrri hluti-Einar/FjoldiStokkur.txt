@@ -1,0 +1,27 @@
+Misseri 2: 
+Stokkur 1: 132
+Stokkur 2: 85
+Stokkur 3: 131
+Stokkur 4: 441
+Stokkur 5: 574
+Stokkur 6: 224
+Stokkur 7: 35
+Stokkur 8: 1989
+Misseri 4: 
+Stokkur 1: 160
+Stokkur 2: 55
+Stokkur 3: 357
+Stokkur 4: 317
+Stokkur 5: 457
+Stokkur 6: 144
+Stokkur 7: 131
+Stokkur 8: 1041
+Misseri 6: 
+Stokkur 1: 239
+Stokkur 2: 204
+Stokkur 3: 26
+Stokkur 4: 257
+Stokkur 5: 174
+Stokkur 6: 34
+Stokkur 7: 345
+Stokkur 8: 450
