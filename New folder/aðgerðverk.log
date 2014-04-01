@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.26)  1 APR 2014 15:08
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.26)  1 APR 2014 16:04
 entering extended mode
 **aðgerðverk.tex
 ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\aðgerðverk.tex"
@@ -605,34 +605,30 @@ Package pdftex.def Info: stundatafla.pdf used on input line 128.
 [1
 
  <C:/Users/Einar/Documents/GitHub/Adgerdargreining/New folder/stundatafla.pdf>]
- <stundatoflur.pdf, id=29, 1422.31375pt x 688.5725pt>
+ <thyrping.png, id=29, 474.27188pt x 427.5975pt>
+File: thyrping.png Graphic file (type png)
+ <use thyrping.png>
+Package pdftex.def Info: thyrping.png used on input line 146.
+(pdftex.def)             Requested size: 284.56532pt x 256.56047pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.11469pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2 <C:/Users/Einar/Documents/GitHub/Adgerdargreining/New folder/thyrping.png>]
+<stundatoflur.pdf, id=33, 1422.31375pt x 688.5725pt>
 File: stundatoflur.pdf Graphic file (type pdf)
  <use stundatoflur.pdf>
-Package pdftex.def Info: stundatoflur.pdf used on input line 149.
-(pdftex.def)             Requested size: 426.69742pt x 206.57333pt.
+Package pdftex.def Info: stundatoflur.pdf used on input line 158.
+(pdftex.def)             Requested size: 341.43306pt x 165.29228pt.
 
-Overfull \hbox (32.63708pt too wide) in paragraph at lines 149--150
-[][] 
- []
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\unicode\data\uni-34.def"
-File: uni-34.def 2004/10/17 UCS: Unicode data U+2200..U+22FF
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\unicode\data\uni-33.def"
-File: uni-33.def 2004/10/17 UCS: Unicode data U+2100..U+21FF
-)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.11469pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[2 <C:/Users/Einar/Documents/GitHub/Adgerdargreining/New folder/stundatoflur.pd
-f>] <c_lidur_plot.pdf, id=52, 613.29124pt x 385.44pt>
+<c_lidur_plot.pdf, id=34, 613.29124pt x 385.44pt>
 File: c_lidur_plot.pdf Graphic file (type pdf)
  <use c_lidur_plot.pdf>
-Package pdftex.def Info: c_lidur_plot.pdf used on input line 168.
-(pdftex.def)             Requested size: 306.64487pt x 192.71953pt.
+Package pdftex.def Info: c_lidur_plot.pdf used on input line 177.
+(pdftex.def)             Requested size: 341.43306pt x 214.58043pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -640,7 +636,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3 <C:/Users/Einar/Documents/GitHub/Adgerdargreining/New folder/c_lidur_plot.pd
+[3 <C:/Users/Einar/Documents/GitHub/Adgerdargreining/New folder/stundatoflur.pd
 f>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -648,7 +644,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4]
+[4 <C:/Users/Einar/Documents/GitHub/Adgerdargreining/New folder/c_lidur_plot.pd
+f>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.11469pt.
@@ -656,11 +653,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 27.11469pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 248--249
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 238.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 249.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -679,7 +683,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]
+[7]
 Overfull \hbox (128.38576pt too wide) in paragraph at lines 55--56
 [][][][][][][][][]  
  []
@@ -696,16 +700,16 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7] ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\aðgerðverk.au
+[8] ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\aðgerðverk.au
 x") ) 
 Here is how much of TeX's memory you used:
- 9149 strings out of 494049
- 125348 string characters out of 3146065
- 283127 words of memory out of 3000000
- 12257 multiletter control sequences out of 15000+200000
+ 8367 strings out of 494049
+ 116890 string characters out of 3146065
+ 283159 words of memory out of 3000000
+ 11480 multiletter control sequences out of 15000+200000
  23122 words of font info for 59 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 36i,12n,43p,754b,2201s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,12n,43p,684b,2201s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Pro
 gram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Progra
 m Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program 
@@ -729,9 +733,9 @@ uper/sfti1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sftt1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/s
 fxc2074.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.p
 fb>
-Output written on aðgerðverk.pdf (9 pages, 399597 bytes).
+Output written on aðgerðverk.pdf (10 pages, 471307 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
+ 156 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
