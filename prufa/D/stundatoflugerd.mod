@@ -33,7 +33,7 @@ s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<=8} V[n,s]=1;
 #Stokkur taki að hámarki við 5 kennslustundum (nema stokkur 8)
 s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<8}: sum{n in NamskeidHopur[ell,h]} NamskeidTimar[n]*V[n,s]<=5;
 
-/*
+
 #Liður D
 #Fyrri hluti
 #Þetta markfall virkar þannig að það leggur saman öll námskeiðin sem lenda í æskilegum stokki, og dregur svo frá 
@@ -55,7 +55,7 @@ param prufa3 := prufa1-prufa2;
 display prufa1;
 display prufa2;
 display prufa3;
-*/
+
 /*
 #Niðurstöður hjá Oddi (í Windows), til samanburðar
 Display statement at line 48
@@ -76,7 +76,7 @@ prufa3 = 49
 
 
 
-
+/*
 #Seinni hluti
 #Þetta markfall virkar þannig að það leggur saman öll námskeiðin sem lenda í æskilegum stokki og margfaldar 
 #þá summu með stórum fasta, svo dregur það frá summu þeirra námskeiða sem lenda eftir hádegi eða utan stokka 
@@ -92,7 +92,7 @@ param EftirHadegi := sum{n in Namskeid, s in Stokkur: s>5} V[n,s];#Hversu mörg 
 display EftirHadegi;
 #display AEskilegSkipting; #Í seinni hlutanum segir þetta manni eiginlega ekki neitt gagnlegt held ég
 display AEskilegSkiptingPerMisseri;#hversu mörg námskeið lenda í æskilegum stokki
-
+*/
 /*
 #Niðurstöður hjá Oddi (í Windows), til samanburðar
 #Fastar í markfallinu: 10000 og 100
