@@ -192,6 +192,8 @@ Fjöldi námskeiða sem lenda í æskilegum stokk eða stokkum 1-5 á hverju mis
 Núna eru 14 áfangar eftir hádegi sem er aukning um 4. Því er í raun verra að nota fyrifram skilgreinda stokka samkvæmt þessu.
 
 e)kennslustofunýting, námskeið fyrir hádegi
+
+
 Til að stofunýting sé sem best skrifuðum við kóða sem lágmarkar tómar skólastofur
 
 f)besta útfærsla stundatöflu....heildarfjöldi árekstra
@@ -209,7 +211,7 @@ grundval laratriðum endurtekið niðurstöðurnar
 
 Almennt línulegt bestunarlíkan er þar sem gefið er:
 
-Hráefni(e.resources) með takmörkuðu framboði $b_i$, á hráefni i þar sem:
+Hráefni(e.resources) með takmörkuðu framboði  $b_i$, á hráefni i þar sem:
 \[i=1,....,m\]
 Framleiðsluvörur(e.activities), ákvarðað er $x_j$ sem er framleitt magn eininga af vöru j þar sem:
 \[j=1,....,m\]
@@ -227,6 +229,18 @@ Fylkjaform:
 með skorðum:
 \[Ax\leq b\]
 \[x\geq 0\]
+Byrjum á því að setja verkefnið okkar upp í gusek með gefnum mengjum og breytum:
+\lstinputlisting{almennt.mod}
+Þar á eftir skilgreingum við ákvörðunarbreytunar V[n,s], námskeiðið sé kennt aðeins einu sinnu og að 
+hver stokkur taki að hámarki við 5 kennslustundum (nema stokkur 8).
+
+\lstinputlisting{stundatoflugerd2.mod}
+Til að hámarka fjölda námskeiða sem lenda í stokki 1-5 bætum við eftirfarandi skorðu við:
+\lstinputlisting{blidur.mod}
+Því næst þurfum við að skoða árekstrana sem myndast
+\lstinputlisting{clidur.mod}
+
+
 
 \section{Almenn umfjöllun....sleppa??}
 \begin{itemize}

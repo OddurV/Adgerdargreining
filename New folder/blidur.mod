@@ -1,0 +1,1 @@
+minimize EftirHadegi: sum{n in Namskeid, s in Stokkur: s>5} V[n,s];

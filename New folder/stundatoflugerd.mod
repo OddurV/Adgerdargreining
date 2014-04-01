@@ -52,21 +52,10 @@ display Arekstur;#Niðurstöður hjá Oddi: 145 156 115 105 295 0 20 0
 
 
 
-#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-#Dæmi frá Tomma:
-#Útreikningur á árekstrum:
-#printf " " > "lidur_c.txt";
-#for {k in Nemi}
-#{
-#    printf {s in Stokkur: s <= 8}: "%d ",
-#    sum{n in Namskeid, ell in Namsleidir: NemiSkradur[k, ell, n] == 1} V[n,s] >> "lidur_c.txt";
-#    printf "\n" >> "lidur_c.txt";
-#}
-
 #Fjöldi nema í námskeiði má reikna svona:
 param FjoldiNamskeid {n in Namskeid} := sum{i in Nemi, ell in Namsleidir} NemiSkradur[i, ell, n];
 
-#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#%%%%
 
 #display Arekstrar;
 
