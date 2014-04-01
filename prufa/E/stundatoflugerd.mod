@@ -62,13 +62,18 @@ for{n in Namskeid}{
 #display FjoldiNamskeid;
 
 printf "">"FjoldiNamskeid.txt";
-for{n in Namskeid}{
-    printf FjoldiNamskeid[n]>>"FjoldiNamskeid.txt";
-    printf "\n">>"FjoldiNamskeid.txt";
-}
+printf "Hver lina er hvert fag og tolurnar eru fj nemenda i theim fogum\n" >> "FjoldiNamskeid.txt"; 
+printf {n in Namskeid} "%d\n ", FjoldiNamskeid[n] >> "FjoldiNamskeid.txt";
 
-printf "Hver lina er hvert fag og tolurnar eru fj nemenda i theim fogum\n" >> "FjoldiNamskeid2.txt"; 
-printf {n in Namskeid} "%d\n ", FjoldiNamskeid[n] >> "FjoldiNamskeid2.txt";
+printf "">"FjoldiStokkur.txt";
+for{m in Misseri}{
+    printf "Misseri ",m,": \n">>"FjoldiStokkur.txt";
+    for{s in Stokkur}{
+        printf "Stokkur ",s,": ">>"FjoldiStokkur.txt";
+        printf sum{n in Namskeid: V[n,s]==1 and NamskeidMisseri[n]==m} FjoldiNamskeid[n]>>"FjoldiStokkur.txt";
+        printf "\n">>"FjoldiStokkur.txt";
+    }
+}
 
 printf "">"Tafla.txt";
 printf "Dreifing faganna er eftirfarandi, (fyrri tala taknar fag og su seinni stokk):\n" >> "Tafla.txt"; 
