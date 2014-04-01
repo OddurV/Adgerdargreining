@@ -1,3 +1,6 @@
+#Liður A
+#Stundataflan sem við fengum
+
 Misseri 2
 
 Stokkur 1:

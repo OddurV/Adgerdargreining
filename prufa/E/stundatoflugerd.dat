@@ -17,9 +17,9 @@ set NamskeidHopur[EFN,7] := ;
 # Eðlisfræði
 # Eðlisfræði rúms og tíma (25), Líkindareikningur og tölfræði (19), Eðlisfræði 2a (18), Eðlisfræði 2 R (15), Stærðfræðigreining IIC (9), Inngangur að líkindafræði (4), 
 # Rafsegulfræði 1 (13), Frumeinda- og ljósfræði (13), Stærðfræðigreining IVB (13), Töluleg greining (13), Eðlisfræði rúms og tíma (4), 
-set NamskeidHopur[EDL,1] :=  30 106 28 27 108 111 ;
+set NamskeidHopur[EDL,1] :=  30 106 28 27 108 111 109;
 set NamskeidHopur[EDL,2] :=  31 34 112 114 30 ;
-set NamskeidHopur[EDL,3] := ; 
+set NamskeidHopur[EDL,3] := 37 38 ;
 set NamskeidHopur[EDL,4] := ; 
 set NamskeidHopur[EDL,5] := ; 
 set NamskeidHopur[EDL,6] := ; 

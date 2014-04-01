@@ -1,4 +1,3 @@
-﻿#Mengi
 # Námskeiðshópur innan við námsleið
 set Hopur := {1..7};
 # Nemi
