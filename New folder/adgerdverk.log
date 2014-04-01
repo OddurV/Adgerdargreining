@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.26)  1 APR 2014 18:39
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.8.26)  1 APR 2014 18:53
 entering extended mode
 **adgerdverk.tex
 ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\adgerdverk.tex"
@@ -649,7 +649,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [4 <C:/Users/Einar/Documents/GitHub/Adgerdargreining/New folder/c_lidur_plot.pd
 f>]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 233.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 223.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
@@ -660,14 +660,14 @@ File: latin1.def 2008/03/30 v1.1d Input encoding file
 ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\almennt.mod"
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `T1/cmtt/m/n' tried instead on input line 3.
-
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.11469pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5]) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
+[5] ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2008/03/30 v1.1d Input encoding file
 )
 ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\stundatoflugerd2.
@@ -692,17 +692,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [6]) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
 File: latin1.def 2008/03/30 v1.1d Input encoding file
 )
-("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\dlidur2.mod"
+("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\dlidur2.mod")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+)
+("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\elidur.mod"
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.11469pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7]) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
-File: latin1.def 2008/03/30 v1.1d Input encoding file
-)
-("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\elidur.mod")
+[7])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.11469pt.
@@ -717,45 +718,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 272--273
-
- []
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
-File: latin1.def 2008/03/30 v1.1d Input encoding file
-)
-("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\stundatoflugerd.m
-od"
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 27.11469pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 27.11469pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[11]
+[10]
 ("C:\Users\Einar\Documents\GitHub\Adgerdargreining\New folder\adgerdverk.aux")
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 8409 strings out of 494049
- 118874 string characters out of 3146065
- 308202 words of memory out of 3000000
- 11487 multiletter control sequences out of 15000+200000
+ 8402 strings out of 494049
+ 118569 string characters out of 3146065
+ 297202 words of memory out of 3000000
+ 11485 multiletter control sequences out of 15000+200000
  23122 words of font info for 59 fonts, out of 3000000 for 9000
  715 hyphenation exceptions out of 8191
- 37i,12n,43p,692b,2199s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{
-C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<C:/Program Fil
+ 37i,12n,43p,692b,2156s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-ts1.enc}
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}{C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}<C:/Program Fil
 es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files (
 x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x86
@@ -775,10 +760,9 @@ uper/sfrm2074.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-supe
 r/sfti1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/s
 ftt1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfxc
 2074.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb>
-
-Output written on adgerdverk.pdf (13 pages, 498153 bytes).
+Output written on adgerdverk.pdf (12 pages, 503084 bytes).
 PDF statistics:
- 166 PDF objects out of 1000 (max. 8388607)
+ 162 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
