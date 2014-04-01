@@ -38,7 +38,7 @@ s.t. Breytuheiti {s in Stokkur}: sum{n in Namskeid} V[n,s]/FjoldiNamskeid[n]>=Z;
 #námskeiðið sé kennt aðeins einu sinni
 s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<=8} V[n,s]=1;
 #Stokkur taki að hámarki við 5 kennslustundum (nema stokkur 8)
-s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<=8}: sum{n in NamskeidHopur[ell,h]} NamskeidTimar[n]*V[n,s]<=5;
+s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<8}: sum{n in NamskeidHopur[ell,h]} NamskeidTimar[n]*V[n,s]<=5;
 
 solve;
 printf "">"V.txt";
@@ -55,8 +55,11 @@ for{n in Namskeid}{
 printf "">"FjoldiNamskeid.txt";
 for{n in Namskeid}{
     printf FjoldiNamskeid[n]>>"FjoldiNamskeid.txt";
-    printf "n\">>"FjoldiNamskeid.txt";
+    printf "\n">>"FjoldiNamskeid.txt";
 }
+
+printf "Hver lina er hvert fag og tolurnar eru fj nemenda i theim fogum\n" >> "FjoldiNamskeid2.txt"; 
+printf {n in Namskeid} "%d\n ", FjoldiNamskeid[n] >> "FjoldiNamskeid2.txt";
 
 printf "">"Tafla.txt";
 printf "Dreifing faganna er eftirfarandi, (fyrri tala taknar fag og su seinni stokk):\n" >> "Tafla.txt"; 

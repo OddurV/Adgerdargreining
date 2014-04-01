@@ -36,4 +36,30 @@ s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<=8}: sum{
 solve;
 #display V;
 
+#%%%%%%%%%%%%%%%%%%%%
+#Fall sem prentar út stundatöflurnar
+printf " " > "stundatoflur.txt";
+param EDLfjoldi{n in Namskeid} := sum{k in Nemi: NemiSkradur[k,"EDL", n] == 1}1;
+#param EDLI {n in Namskeid} := for{k in Nemi}
+printf "\n ***********\n " >> "stundatoflur.txt";
+
+#ÞETTA SÝNIR HVAÐA NÁMSKEIÐ FARA Í HVAÐA STOKK Í EÐLISFRÆÐIHÓPNUM
+#ÞAR SEM NÚMER LÍNU ER NÚMER STOKKS
+param ErAMisseri {m in Misseri, n in Namskeid} := if NamskeidMisseri[n] == m then n else 0;
+for{m in Misseri}{
+    printf "Misseri " >> "stundatoflur.txt";
+    printf m >> "stundatoflur.txt";
+    printf "\n " >> "stundatoflur.txt";
+    for{s in Stokkur}{
+        printf "Stokkur " >> "stundatoflur.txt";
+        printf s >> "stundatoflur.txt";
+        printf ": " >> "stundatoflur.txt";
+        printf {n in Namskeid: V[n,s] == 1 and EDLfjoldi[n]>0 and ErAMisseri[m,n]>0} "%d ", n >> "stundatoflur.txt";  
+        printf "\n " >> "stundatoflur.txt";
+    }
+printf "---\n " >> "stundatoflur.txt";
+}
+#%%%%%%%%%%%%%%%%%%%%
+
+
 end;

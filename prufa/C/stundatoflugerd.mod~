@@ -1,4 +1,4 @@
-#Mengi
+﻿#Mengi
 # Námskeiðshópur innan við námsleið
 set Hopur := {1..7};
 # Nemi
@@ -37,7 +37,7 @@ s.t. NamskeidKennt {n in Namskeid}: sum{s in Stokkur: s<=8} V[n,s]=1;
 s.t. FimmTimarPerStokk {s in Stokkur, ell in Namsleidir, h in Hopur: s<=8}: sum{n in NamskeidHopur[ell,h]} NamskeidTimar[n]*V[n,s]<=5;
 
 solve;
-
+display EftirHadegi;
 #%%%%
 param Arekstrar {k in Nemi, s in Stokkur} := sum{n in Namskeid, ell in Namsleidir: NemiSkradur[k, ell, n] == 1} V[n,s];
 param Bin {k in Nemi,s in Stokkur} := if Arekstrar[k,s]>1 then 1 else 0;
@@ -49,6 +49,30 @@ param Arekstur {s in Stokkur}:= sum{k in Nemi} Bin[k,s];
 display Arekstur;
 #%%%%
 
+#%%%%%%%%%%%%%%%%%%%%
+#Fall sem prentar út stundatöflurnar
+printf " " > "stundatoflur.txt";
+param EDLfjoldi{n in Namskeid} := sum{k in Nemi: NemiSkradur[k,"EDL", n] == 1}1;
+#param EDLI {n in Namskeid} := for{k in Nemi}
+printf "\n ***********\n " >> "stundatoflur.txt";
+
+#ÞETTA SÝNIR HVAÐA NÁMSKEIÐ FARA Í HVAÐA STOKK Í EÐLISFRÆÐIHÓPNUM
+#ÞAR SEM NÚMER LÍNU ER NÚMER STOKKS
+param ErAMisseri {m in Misseri, n in Namskeid} := if NamskeidMisseri[n] == m then n else 0;
+for{m in Misseri}{
+    printf "Misseri " >> "stundatoflur.txt";
+    printf m >> "stundatoflur.txt";
+    printf "\n " >> "stundatoflur.txt";
+    for{s in Stokkur}{
+        printf "Stokkur " >> "stundatoflur.txt";
+        printf s >> "stundatoflur.txt";
+        printf ": " >> "stundatoflur.txt";
+        printf {n in Namskeid: V[n,s] == 1 and EDLfjoldi[n]>0 and ErAMisseri[m,n]>0} "%d ", n >> "stundatoflur.txt";  
+        printf "\n " >> "stundatoflur.txt";
+    }
+printf "---\n " >> "stundatoflur.txt";
+}
+#%%%%%%%%%%%%%%%%%%%%
 
 
 
@@ -67,19 +91,7 @@ display Arekstur;
 param FjoldiNamskeid {n in Namskeid} := sum{i in Nemi, ell in Namsleidir} NemiSkradur[i, ell, n];
 
 #%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-#param Arekstrar{Stokkur};
-#for {k in Nemi}
-#{
-#    for {s in Stokkur}
-#    {
-#        temp=sum{n in Namskeid, ell in Namsleidir: NemiSkradur[k, ell, n] == 1} V[n,s];
-#        if temp>1 then Arekstrar[s]=Arekstrar[s]+1;
-#    }
-#}
-#display Arekstrar;
-
 
 #display V;
-display EftirHadegi;
 
 end;
