@@ -130,14 +130,14 @@ Verkfræði og náttúruvísindasvið Háskóla Íslands notast við stokkakerfi
 \label{fig: stundatafla}
 \end{figure}
 
-Við nefndum svo stokk 8 þar sem áfangar raðast niður utan þessara stokka. Eftir að hafa gert líkan tókst að raða áföngum þannig að þeir tóku bara 1 stokk hver. Gefin var skrá með lista á 1858 nemendur og hvaða námskeið þeir völdu. Við bjuggum til forrit sem raðar nemendum upp í æskilega stokka eftir þeim námskeiðum sem þeir velja og reynum að forðast árekstra en því miður þá eru oftast eitthverjir sem lenda í árekstri við önnur fög innan stokksins. Forritið sem við skrifuðum les úr gögnunum sem voru gefin og raðar í stokka. Forritið gefur góða lausn sem hentar eðlisfræðinni vel.
+Við nefndum svo stokk 8 þar sem áfangar raðast niður utan þessara stokka. Eftir að hafa gert líkan tókst að raða áföngum þannig að þeir tóku bara 1 stokk hver. Gefin var skrá með lista á 1858 nemendur og hvaða námskeið þeir völdu. Við bjuggum til forrit í Gusek sem raðar nemendum upp í æskilega stokka eftir þeim námskeiðum sem þeir velja og reynum að forðast árekstra en því miður þá eru oftast einhverjir sem lenda í árekstri við önnur fög innan stokksins. Forritið sem við skrifuðum les úr gögnunum sem voru gefin og raðar í stokka. Forritið gefur góða lausn sem hentar eðlisfræðinni vel.
 
 
 
 
 \section{Inngangur/bakgrunnur}
 Í þessu verkefni eigum við að raða nemendum sem eru að læra eðlisfræði í ákveðna stokka (mynd 1) eftir námskeiðum sem þeir velja. Gefin er .dat skrá með lista yfir 1858 nemendur sem eru skráðir á verkfræði og náttúruvísindasvið Háskóla Íslands og í þessari sömu skrá er listi yfir 141 námskeið sem eru í boði. Við reynum að láta verklega tíma, dæmatíma og æfingatíma falla utan við stokka (stokkur 8). Hvert námskeið fær tvo daga í viku, annan daginn eru tímarinr 2 x 40 mínútur og hinn daginn 3 x 40 mínútur.
-Stundatöflur fyrir núverandi vormisseri samræmast ekki fyrirfram skilgreindum kennslustokk samkvæmt kennsluskrá. Eitt af okkar verkefnum er að láta stundatöflurnar vera einsleitar frá ári til árs og þá sérstaklega fyrir fyrsta árið. Erfitt era ð gera góða stundatöflu fyrir annað og þriðja ár því þá fara val áfangar að koma inn og jafnvel endurtekning námskeiða eftir fall.
+Stundatöflur fyrir núverandi vormisseri samræmast ekki fyrirfram skilgreindum kennslustokk samkvæmt kennsluskrá. Eitt af okkar verkefnum er að láta stundatöflurnar vera einsleitar frá ári til árs og þá sérstaklega fyrir fyrsta árið. Erfitt er að gera góða stundatöflu fyrir annað og þriðja ár því þá fara val áfangar að koma inn og jafnvel endurtekning námskeiða eftir fall.
 Við höfum engin áhrif á hvernig námskeið utan eðlisfræðinnar er raðað í stundatöflunni en áhugavert er að sjá hversu tengdar allar 15 námsleiðirnar eru. Á mynd 2 má sjá fylgni námsleiða eftir vali nemenda við viðkomandi námsleið.
 
 
@@ -239,8 +239,14 @@ Til að hámarka fjölda námskeiða sem lenda í stokki 1-5 bætum við eftirfa
 \lstinputlisting{blidur.mod}
 Því næst þurfum við að skoða árekstrana sem myndast
 \lstinputlisting{clidur.mod}
+Breytum nú markfallinu þannig að við komum námskeiðunum fyrir í fyrirfram skilgreinda stokka:
+\lstinputlisting{dlidur1.mod}
+Skilgreinum nú markfallið þannig að við uppfyllum fyrst fyrirfram skilgreinda stokka fyrir misseri 2, svo 4 og loks 6.
+\lstinputlisting{dlidur2.mod}
+Reynum nú að raða áföngunum betur til að stofunýting sé sem best og athugum hvaða áhrif það hefur ef flest námskeið væru fyrir hádegi
+\lstinputlisting{elidur.mod}
 
-
+Kóðarnir í heild sinni með prentskipunum má svo finna í viðauka.
 
 \section{Almenn umfjöllun....sleppa??}
 \begin{itemize}
